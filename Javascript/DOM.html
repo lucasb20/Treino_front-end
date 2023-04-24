@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Document Object Model</title>
+</head>
+<body>
+    <h1>Pronto para a guerra?</h1>
+    <p>Esse é o famoso parágrafo.</p>
+    <p><strong>DOM</strong> é um nome que me assustava</p>
+    <br>
+    <div id="cabrito">Essa é a famosa div.</div>
+    <script>
+        var marcas = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Famoso write. No P[0] está escrito "${marcas.innerHTML}".\n`)
+        marcas.style.color = 'black'
+        var corpo = window.document.body
+        corpo.style.background = 'white'
+        var cabrita = window.document.getElementById('cabrito')
+        document.write(`Está escrito na div: "${cabrita.innerText}".`)
+    </script>
+    <div name="tes1" id="teste1">Outra div de teste.</div>
+    <script>
+        var divteste = window.document.querySelector('div#tes1')
+        var outrotes = window.document.getElementById('teste1')
+        window.document.write(`A div "${outrotes.innerHTML}" não está sendo mostrada por querySeletor. Será que o querySelector não funciona no Firefox antigo?`)
+    </script>
+</body>
+</html>
