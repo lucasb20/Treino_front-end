@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS3/style.css">
+    <title>Tratamento de dados</title>
+    <style>
+        body{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>E vamos de dados</h1>
+    <script>
+        window.alert('Bom dia.')
+        var n1 = Number.parseFloat(prompt('Digite um número.'))
+        var n2 = parseFloat(prompt('Digite outro número.'))
+        var n3 = Number(prompt('Digita mais ou tro número aí para eu ver se tu é o brabo mesmo.'))
+        var soma = n1 + n2 + n3
+        alert('A soma é de '+String(n1)+' + '+String(n2)+' + '+n3.toString()+' é: '+soma+'.')
+        alert(`Ok acabou a brincadeira, ${n1} * ${n2} * ${n3} = ${n1*n2*n3}`)
+        var nome = prompt('Digite um nome.')
+        document.write(`O nome escolhido tem ${nome.length} letras.`)
+        document.write(`O nome escolhido em <strong>maíusculo</strong> é ${nome.toUpperCase()}.`)
+    </script>
+</body>
+</html>
