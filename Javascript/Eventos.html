@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background: rgb(177, 111, 12);
+        }
+        div#area{
+            font: normal 20pt arial;
+            background: rgb(192, 37, 83);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#area2{
+            font: normal 20pt arial;
+            background: rgb(192, 37, 83);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>A famosa DOM</h1>
+    <p>Quem diria que eu só iria ver DOM e entender apenas 1 ano após a primeira tentativa.</p>
+    <div id="area" onclick="clicar()" onmouseenter="enter()" onmouseout="sair()">
+        Teste
+    </div>
+    <br>
+    <p>Também há esse jeito de atribuir funções.</p>
+    <div id="area2">
+        Outro botão.
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        var b = window.document.getElementById('area2')
+
+        b.addEventListener('click',clicar)
+        b.addEventListener('mouseenter',enter)
+        b.addEventListener('mouseout',sair)
+
+        function clicar(){
+            a.innerText = 'Clicou mesmo.'
+            a.style.background = 'blue'
+        }
+        function enter(){ 
+            a.innerText = 'Clica aí.'
+            a.style.background = 'green'
+        }  
+        function sair(){
+            a.innerText = 'Volta aqui.'
+            a.style.background = 'rgb(192, 37, 83)'
+        }
+    </script>
+    
+</body>
+</html>
