@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador de idade.</title>
+</head>
+<body>
+    <header>
+        <h1>Contador de idade.</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano data de nascimento:
+                <input type="number" name="ano" id="ano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="h" checked>
+                <label for="h">Masculino</label>
+                <input type="radio" name="sexo" id="f">
+                <label for="f">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            Clique em verificar e observe a mágica.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lucas Rocha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
