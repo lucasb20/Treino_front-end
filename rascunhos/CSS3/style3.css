@@ -6,12 +6,12 @@ class = .
 */
 
 body{
-    background-color: rgb(129, 212, 136);
+    background-color: #65F79D;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color: rgb(9, 68, 14);
+    color: #2C6B44;
 }
 
 h1#principal{
@@ -21,5 +21,17 @@ h1#principal{
 }
 
 h2{
-    color:rgb(20, 102, 26);
+    color: #46AB6D;
+}
+
+.basico{
+    color: green
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red;
 }
