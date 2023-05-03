@@ -62,7 +62,7 @@ img{
 }
 
 img#bugdroid{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
@@ -75,17 +75,28 @@ h1{
 h2{
     font: normal 16px 'idroid';
     color: var(--cor5);
+    background-image: linear-gradient(to right,var(--cor1),transparent);
 }
 
-article > p{
+main p{
+    margin: 15px 0px;
     text-align: justify;
-    text-indent: 40px;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-size: bold;
 }
 
 header > p{
     max-width: 600px;
     text-align: center;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
 
@@ -96,9 +107,49 @@ nav > a{
     font-weight: bold;
 }
 
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.301);
+}
+
+h3{
+    background-color: var(--cor4);
+    color: white;
+}
+
+ul{
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 30px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 .menucheck{
