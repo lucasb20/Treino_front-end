@@ -13,6 +13,8 @@
     --cor4: #2fa866;
     --cor5: #1a5c37;
     --cor6: #063d1e;
+
+    --font-android: 'idroid', arial;
 }
 
 *{
@@ -28,6 +30,7 @@ body{
 header{
     color: white;
     background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+
 }
 
 nav{
@@ -40,10 +43,28 @@ h1#central{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    padding-top: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
 
 main{
+    margin: auto;
+    padding: 10px;
     background-color: white;
+    min-width: 280px;
+    max-width: 800px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+img#bugdroid{
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 h1{
@@ -62,13 +83,17 @@ article > p{
 }
 
 header > p{
+    max-width: 600px;
     text-align: center;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
 
 nav > a{
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-weight: bold;
 }
 
 footer{
@@ -77,5 +102,7 @@ footer{
 }
 
 .menucheck{
-    background-color: var(--cor5);
+    border-radius: 5px;
+    background-color: var(--cor2);
+    color: var(--cor4);
 }
