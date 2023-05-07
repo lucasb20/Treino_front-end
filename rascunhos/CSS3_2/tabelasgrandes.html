@@ -15,6 +15,13 @@
             border-collapse: collapse;
             width: 400px;
         }
+
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+        }
     </style>
     <title>Tabelas grandes</title>
 </head>
@@ -22,21 +29,23 @@
     <h1>Minha primeira tabela grande</h1>
     <!-- 
         Table
+            Caption
             THEAD
             TBODY
             TFOOT
      -->
      <table>
+        <caption>Título dessa tabela</caption>
         <thead>
             <tr>
-                <th>UF</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">UF</th>
+                <th scope="col">POPULAÇÃO</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <td>TOTAL HABITANTES</td>
-                <td>Muito mesmo</td>
+                <th scope="row">TOTAL HABITANTES</th>
+                <th scope="row">Muito mesmo</th>
             </tr>
         </tfoot>
         <tbody>
@@ -44,6 +53,31 @@
                 <td>São Paulo</td>
                 <td>Muito</td>
             </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>Muito</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>Muito</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>Paraná</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>Muito</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>Muito</td>
+            </tr>
+            <tr>
+                <td>Amazonia</td>
+                <td>Muito</td>
+            </tr>
+
         </tbody>
         <tfoot>
 
