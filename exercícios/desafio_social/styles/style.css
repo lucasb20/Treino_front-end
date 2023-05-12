@@ -38,3 +38,14 @@ iframe{
     width: 265px;
     height: 470px;
 }
+
+section#menu img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+section#menu{
+    text-align: right;
+}
