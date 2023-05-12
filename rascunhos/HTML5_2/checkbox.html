@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radiobutton</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.c" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="homem"><label for="homem">Homem</label>
+            <input type="radio" name="sexo" id="mulher"><label for="mulher">Mulher</label>
+            <input type="radio" name="sexo" id="cavalo" checked><label for="cavalo">Cavalo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="Cavalo" id="Cavalo" checked><label for="Cavalo">Cavalo</label>
+            <input type="checkbox" name="Poney" id="Poney"><label for="Poney">Poney</label>
+            <input type="checkbox" name="Knight" id="Knight" checked><label for="Knight">Knight</label>
+            <input type="checkbox" name="Horse" id="Horse"><label for="Horse">Horse</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>

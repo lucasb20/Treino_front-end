@@ -8,22 +8,34 @@
 </head>
 <body>
     <form action="cadastro.c" method="get">
-        <p>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Nome completo." required>
-        </p>
-        <p>
-            <label for="media">Media: </label>
-            <input type="number" name="media" id="media" placeholder="de 0 a 10" min="0" max="10" step="0.5" required>
-        </p>
-        <p>
-            <label for="datade">Período letivo: </label>
-            <input type="date" name="datade" id="datade">
-        </p>
-        <p>
-            <label for="horario">Horário: </label>
-            <input type="time" name="horario" id="horario">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais.</legend>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo." required>
+            </p>
+            <p>
+                <label for="media">Media: </label>
+                <input type="number" name="media" id="media" placeholder="de 0 a 10" min="0" max="10" step="0.5" required>
+            </p>
+            <p>
+                <label for="datade">Período letivo: </label>
+                <input type="date" name="datade" id="datade">
+            </p>
+            <p>
+                <label for="horario">Horário: </label>
+                <input type="time" name="horario" id="horario">
+            </p>
+            <p>
+                <label for="emai">Email: </label>
+                <input type="email" name="emai" id="emai">
+            </p>
+            <p>
+                <label for="cell">Telefone: </label>
+                <input type="tel" name="cell" id="cell">
+            </p>
+            
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Resetar">
