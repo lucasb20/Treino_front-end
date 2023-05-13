@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs interessantes</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.c" method="get">
+        <p>
+            <label for="cor">Cor: </label>
+            <input type="color" name="cor" id="cor">
+        </p>
+        <p>
+            <label for="ran">Faixa: </label>
+            <input type="range" name="ran" id="ran" min="0" max="10">
+        </p>
+        <p>
+            <label for="arquiv">Arquivo: </label>
+            <input type="file" name="arquiv" id="arquiv">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
