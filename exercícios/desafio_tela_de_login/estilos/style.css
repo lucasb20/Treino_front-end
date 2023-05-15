@@ -10,3 +10,72 @@ Paleta de cores:
 #F6EE27
 
 */
+
+:root{
+    --cor1: #C1F881;
+    --cor2: #CCD971;
+    --cor3: #F0EA8A;
+    --cor4: #D9C771;
+    --cor5: #F8D881;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left, var(--cor1),var(--cor2),var(--cor3),var(--cor4),var(--cor5));
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+main section#login{
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.432);
+    transition: width 0.5s,height 0.5s;
+}
+
+main div#foto{
+    display: block;
+    background-image: url('../imagens/imagemredimensionada.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+main div#formulario{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+div#formulario h1{
+    text-align: center;
+}
+
+div#formulario p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+form div{
+    margin: 10px;
+}
